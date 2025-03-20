@@ -67,15 +67,16 @@ function App() {
               Objective and passionate story-teller with 6+ years of experience with data transformation, analysis and visualization. Enthusiastic about strategic problems requiring innovative thought leadership to solve.
             </p>
             <div className="mt-8 flex justify-center space-x-6">
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="https://github.com/jayyyyteee" className="text-gray-500 hover:text-gray-900">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="https://www.linkedin.com/in/jtsarmento/" className="text-gray-500 hover:text-gray-900">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="mailto:jt.sarmento4@gmail.com" className="text-gray-500 hover:text-gray-900">
                 <Mail className="w-6 h-6" />
               </a>
+
             </div>
             <div className="mt-4">
               <a 
