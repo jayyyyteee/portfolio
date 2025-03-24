@@ -61,7 +61,7 @@ function App() {
               </div>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Data Storyteller & Analytics Professional
+              Problem Solver, Data Storyteller & Analytics Professional
             </h2>
             <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
               Objective and passionate story-teller with 6+ years of experience with data transformation, analysis and visualization. Enthusiastic about strategic problems requiring innovative thought leadership to solve.
