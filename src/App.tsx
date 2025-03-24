@@ -279,7 +279,7 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-gray-900">Certifications</h3>
               <div className="mt-4 space-y-2">
-                <p className="text-gray-600">• AWS Certified Cloud Practitioner</p>
+                <p className="text-gray-600">AWS Certified Cloud Practitioner</p>
               </div>
             </div>
           </div>
