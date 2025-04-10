@@ -88,6 +88,16 @@ function App() {
                 View My Django/Python/AWS Hobby Project: TrekBytes.com
               </a>
             </div>
+            <div className="mt-2">
+              <a 
+                href="https://trekstats.streamlit.app" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 hover:text-blue-800 font-medium"
+              >
+                View My SQL/Python Data Analysis App: TrekStats
+              </a>
+            </div>
           </div>
         </div>
       </header>
