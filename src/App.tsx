@@ -237,17 +237,28 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">Founder & Principal Data Engineer</h3>
-                  <p className="text-gray-600">Off The Charts Data - OTC-Data.com</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Off The Charts Data - OTC-Data.com</h3>
+                  <p className="text-gray-600">Founder & Principal Business Intelligence Engineer</p>
                 </div>
                 <span className="text-gray-500">2/2024 - Present</span>
               </div>
               <p className="mt-2 text-gray-600">Launched a data engineering and analytics consultancy, focusing on optimizing data pipelines, cloud integration, creating insightful automated tools/dashboards, and delivering actionable business intelligence</p>
-              <ul className="mt-4 space-y-2 text-gray-600">
-                <li>• Successfully negotiated and managed three ongoing data engineering engagements, demonstrating flexibility and high client satisfaction</li>
-                <li>• Designed and implemented efficient, scalable data pipelines that streamlined data collection, transformation, and reporting processes, reducing time-to-insight and operational costs for clients</li>
-                <li>• Performed in-depth data analyses that guided the development of improved pricing models, boosting member conversion from 13% to 30% for one client</li>
-              </ul>
+              
+              <div className="mt-4">
+                <p className="text-gray-600"><span className="font-medium text-gray-800">Client: ReEnergized</span>: Wellness Studio in Long Beach CA, specializing in holistic treatments like cryotherapy, hyperbaric and infrared saunas. Built and managed automated Looker/Big Query BI suite</p>
+                <ul className="mt-2 space-y-2 text-gray-600">
+                  <li>• Reduced time to insight by 60x per week on revenue, expense and booking reporting through automated business intelligence dashboards</li>
+                  <li>• Performed in-depth data analyses that guided the development of improved pricing models, boosting member conversion from 13% to 30%</li>
+                </ul>
+              </div>
+              
+              <div className="mt-4">
+                <p className="text-gray-600"><span className="font-medium text-gray-800">Client: Circles Bali</span>: Digital application that provided Universal Basic Income through block chain technology.</p>
+                <ul className="mt-2 space-y-2 text-gray-600">
+                  <li>• Built and managed data warehouse and business intelligence dashboards using Postgresql and Apache Superset</li>
+                  <li>• Led and built field stimulus events based on application usage metrics, identifying key markets and hotspots to focus on</li>
+                </ul>
+              </div>
             </div>
 
             {/* Monster Energy - LSEC BI Manager */}
