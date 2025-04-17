@@ -64,7 +64,7 @@ function App() {
               Problem Solver, Data Storyteller & Analytics Professional
             </h2>
             <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              Objective and passionate story-teller with 6+ years of experience with data transformation, analysis and visualization. Enthusiastic about strategic problems requiring innovative thought leadership to solve.
+              Data specalist and business intelligence professional with 6+ years of experience with transformation, analysis and visualization. Enthusiastic about strategic problems requiring innovative thought leadership to solve.
             </p>
             <div className="mt-8 flex justify-center space-x-6">
               <a href="https://github.com/jayyyyteee" className="text-gray-500 hover:text-gray-900">
@@ -78,33 +78,160 @@ function App() {
               </a>
 
             </div>
-            <div className="mt-4">
-              <a 
-                href="https://trekbytes.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
-                View My Django/Python/AWS Hobby Project: TrekBytes.com
-              </a>
-            </div>
-            <div className="mt-2">
-              <a 
-                href="https://trekstats.streamlit.app" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
-                View My SQL/Python Data Analysis App: TrekStats
-              </a>
-            </div>
           </div>
         </div>
       </header>
 
-      {/* Experience Section */}
+      {/* Main Content Section */}
       <main className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        {/* What Others Are Saying Section - Moved to top */}
         <section>
+          <h2 className="text-3xl font-bold text-gray-900">What Others Are Saying</h2>
+          <div className="mt-6">
+            <div className="bg-white p-8 rounded-lg shadow relative">
+              <div className="flex justify-between absolute top-4 left-4 right-4">
+                <button 
+                  onClick={prevTestimonial}
+                  className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                  aria-label="Previous testimonial"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button 
+                  onClick={nextTestimonial}
+                  className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+                  aria-label="Next testimonial"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+              </div>
+              <div className="pt-8">
+                <blockquote className="text-lg text-gray-700 italic">
+                  "{testimonials[currentTestimonial].text}"
+                </blockquote>
+                <div className="mt-6">
+                  <p className="text-gray-900 font-semibold">{testimonials[currentTestimonial].author}</p>
+                  <p className="text-gray-600">{testimonials[currentTestimonial].title}</p>
+                </div>
+              </div>
+              <div className="flex justify-center mt-6 space-x-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentTestimonial(index)}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      index === currentTestimonial ? 'bg-blue-600' : 'bg-gray-300'
+                    }`}
+                    aria-label={`Go to testimonial ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="mt-16">
+          <h2 className="text-3xl font-bold text-gray-900">Projects</h2>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {/* TrekBytes Project Card */}
+            <div className="bg-white p-6 rounded-lg shadow overflow-hidden flex flex-col">
+              <div className="relative h-48 mb-4 bg-gray-200 rounded overflow-hidden">
+                {/* Replace the src with an actual screenshot of TrekBytes */}
+                <img 
+                  src="/trekbytes-screenshot.png" 
+                  alt="TrekBytes website screenshot" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => e.currentTarget.src = 'https://via.placeholder.com/600x300?text=TrekBytes+Screenshot'}
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900">TrekBytes</h3>
+              <p className="text-gray-600 mt-2 flex-grow">
+                A Django/Python/AWS project for organizing and sharing travel experiences. Built with modern web technologies and deployed on AWS infrastructure.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Django</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">AWS</span>
+              </div>
+              <div className="mt-4">
+                <a 
+                  href="https://trekbytes.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                >
+                  Visit TrekBytes
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* TrekStats Project Card */}
+            <div className="bg-white p-6 rounded-lg shadow overflow-hidden flex flex-col">
+              <div className="relative h-48 mb-4 bg-gray-200 rounded overflow-hidden">
+                {/* Replace the src with an actual screenshot of TrekStats */}
+                <img 
+                  src="/trekstats-screenshot.png" 
+                  alt="TrekStats application screenshot" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => e.currentTarget.src = 'https://via.placeholder.com/600x300?text=TrekStats+Screenshot'}
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900">TrekStats</h3>
+              <p className="text-gray-600 mt-2 flex-grow">
+                A SQL/Python data analysis application built with Streamlit. Provides interactive data visualization and analysis studying the impact of long term travel on important health metrics from Garmin.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">SQL</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Streamlit</span>
+              </div>
+              <div className="mt-4">
+                <a 
+                  href="https://trekstats.streamlit.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                >
+                  Visit TrekStats
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* In the News Section - Moved to be after Projects */}
+        <section className="mt-16">
+          <h2 className="text-3xl font-bold text-gray-900">In the News</h2>
+          <div className="mt-6">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="https://merage.uci.edu/news/2020/03/msba-students-study-app,-present-findings-to-city-of-san-diego-chief-data-officer.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600">
+                    MSBA Students Study App, Present Findings to City of San Diego Chief Data Officer
+                  </h3>
+                  <p className="text-gray-600 mt-2">
+                    UCI Paul Merage School of Business - March 2020
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section className="mt-16">
           <h2 className="text-3xl font-bold text-gray-900">Experience</h2>
           <div className="mt-6 space-y-8">
             {/* Off The Charts Data */}
@@ -186,76 +313,6 @@ function App() {
                 <li>• Analyzed, drew and implemented schematic wine shelf sets for all 198 Save Mart Company stores</li>
                 <li>• Managed Gallo's 70+ wine and spirits portfolio in 22 chain grocery stores in San Francisco area</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* In the News Section */}
-        <section className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900">In the News</h2>
-          <div className="mt-6">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="flex flex-col space-y-4">
-                <a 
-                  href="https://merage.uci.edu/news/2020/03/msba-students-study-app,-present-findings-to-city-of-san-diego-chief-data-officer.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600">
-                    MSBA Students Study App, Present Findings to City of San Diego Chief Data Officer
-                  </h3>
-                  <p className="text-gray-600 mt-2">
-                    UCI Paul Merage School of Business - March 2020
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What Others Are Saying Section */}
-        <section className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900">What Others Are Saying</h2>
-          <div className="mt-6">
-            <div className="bg-white p-8 rounded-lg shadow relative">
-              <div className="flex justify-between absolute top-4 left-4 right-4">
-                <button 
-                  onClick={prevTestimonial}
-                  className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
-                  aria-label="Previous testimonial"
-                >
-                  <ChevronLeft className="w-6 h-6" />
-                </button>
-                <button 
-                  onClick={nextTestimonial}
-                  className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
-                  aria-label="Next testimonial"
-                >
-                  <ChevronRight className="w-6 h-6" />
-                </button>
-              </div>
-              <div className="pt-8">
-                <blockquote className="text-lg text-gray-700 italic">
-                  "{testimonials[currentTestimonial].text}"
-                </blockquote>
-                <div className="mt-6">
-                  <p className="text-gray-900 font-semibold">{testimonials[currentTestimonial].author}</p>
-                  <p className="text-gray-600">{testimonials[currentTestimonial].title}</p>
-                </div>
-              </div>
-              <div className="flex justify-center mt-6 space-x-2">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentTestimonial(index)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentTestimonial ? 'bg-blue-600' : 'bg-gray-300'
-                    }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </section>
