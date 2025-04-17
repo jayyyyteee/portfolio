@@ -142,7 +142,7 @@ function App() {
                   src="/trekbytes-screenshot.png" 
                   alt="TrekBytes website screenshot" 
                   className="w-full h-full object-cover"
-                  onError={(e) => e.currentTarget.src = 'https://via.placeholder.com/600x300?text=TrekBytes+Screenshot'}
+                  onError={(e) => e.currentTarget.src = 'https://github.com/jayyyyteee/portfolio/blob/main/trekbytes-screenshot.png?raw=true'}
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">TrekBytes</h3>
@@ -177,7 +177,7 @@ function App() {
                   src="/trekstats-screenshot.png" 
                   alt="TrekStats application screenshot" 
                   className="w-full h-full object-cover"
-                  onError={(e) => e.currentTarget.src = 'https://via.placeholder.com/600x300?text=TrekStats+Screenshot'}
+                  onError={(e) => e.currentTarget.src = 'https://github.com/jayyyyteee/portfolio/blob/main/trekstats-screenshot.png?raw=true'}
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">TrekStats</h3>
