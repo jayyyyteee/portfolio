@@ -37,7 +37,7 @@ function App() {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextTestimonial, 10000); // Auto-advance every 10 seconds
+    const timer = setInterval(nextTestimonial, 20000); // Auto-advance every 20 seconds
     return () => clearInterval(timer);
   }, []);
 
@@ -84,7 +84,7 @@ function App() {
 
       {/* Main Content Section */}
       <main className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        {/* What Others Are Saying Section - Moved to top */}
+        {/* What Others Are Saying Section */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900">What Others Are Saying</h2>
           <div className="mt-6">
@@ -137,7 +137,6 @@ function App() {
             {/* TrekBytes Project Card */}
             <div className="bg-white p-6 rounded-lg shadow overflow-hidden flex flex-col">
               <div className="relative h-48 mb-4 bg-gray-200 rounded overflow-hidden">
-                {/* Replace the src with an actual screenshot of TrekBytes */}
                 <img 
                   src="/trekbytes-screenshot.png" 
                   alt="TrekBytes website screenshot" 
