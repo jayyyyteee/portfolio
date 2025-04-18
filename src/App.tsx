@@ -245,10 +245,10 @@ function App() {
               <p className="mt-2 text-gray-600">Launched a data engineering and analytics consultancy, focusing on optimizing data pipelines, cloud integration, creating insightful automated tools/dashboards, and delivering actionable business intelligence</p>
               
               <div className="mt-4">
-                <p className="text-gray-600"><span className="font-medium text-gray-800">Client: ReEnergized</span>: Wellness Studio in Long Beach CA, specializing in holistic treatments like cryotherapy, hyperbaric and infrared saunas. Built and managed automated Looker/Big Query BI suite</p>
+                <p className="text-gray-600"><span className="font-medium text-gray-800">Client: ReEnergized</span>: Wellness Studio in Long Beach CA, specializing in holistic treatments like cryotherapy, hyperbaric and infrared saunas. Built scalable ETL pipeline utilizing Big Query and visualized in Looker</p>
                 <ul className="mt-2 space-y-2 text-gray-600">
-                  <li>• Reduced time to insight by 60x per week on revenue, expense and booking reporting through automated business intelligence dashboards</li>
-                  <li>• Performed in-depth data analyses that guided the development of improved pricing models, boosting member conversion from 13% to 30%</li>
+                  <li>• Led end-to-end development of a cross-functional BI dashboard project—from stakeholder discovery through data modeling, ETL design, QA, and rollout—reducing manual reporting by 90%</li>
+                  <li>• Designed BI suite tracking patient-level bookings, service usage, and churn; insights led to a 2.3x improvement in member conversion, supporting a subscription-based growth model</li>
                 </ul>
               </div>
               
@@ -265,15 +265,15 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">LSEC Business Intelligence Manager</h3>
-                  <p className="text-gray-600">Monster Energy Company</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Monster Energy Company</h3>
+                  <p className="text-gray-600">LSEC Retail Business Intelligence Manager</p>
                 </div>
                 <span className="text-gray-500">10/2022 - 2/2024</span>
               </div>
-              <p className="mt-2 text-gray-600">Developed and managed holistic analytical suite of dashboard reporting for Large Store and Emerging Channels, collaborating with CCO and VPs to cater to their analytical needs</p>
+              <p className="mt-2 text-gray-600">Developed and managed holistic analytical suite of Power BI dashboard reporting for Large Store and Emerging Channels including eCommerce, collaborating with CCO and VPs to cater to their analytical needs</p>
               <ul className="mt-4 space-y-2 text-gray-600">
-                <li>• Created first "Execution Dashboard" aggregating +350M rows of invoice data, tracking out of stocks and distribution success by store level, leading to +5% in stock rate within 3 months of deployment</li>
-                <li>• Developed internal "Channel Connect" system standardizing reporting for each retail channel on an automated basis, resulting in saving ~120 hours of time of manual reporting a year</li>
+                <li>• Created first "Execution Dashboard" tracking out of stocks and distribution success by store level, leading to +5% in stock rate within 3 months, generating an estimated $20M in incremental revenue</li>
+                <li>• Developed internal digital marketing and eCommerce dashboards, leading to optimization of offense/defense spend and advertising spend, resulting in increase in ROAS by 1.43x</li>
               </ul>
             </div>
 
@@ -281,8 +281,8 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">Category Management Data Analyst</h3>
-                  <p className="text-gray-600">Monster Energy Company</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Monster Energy Company</h3>
+                  <p className="text-gray-600">Category Management Retail Data Analyst</p>
                 </div>
                 <span className="text-gray-500">02/2021 - 10/2022</span>
               </div>
@@ -298,15 +298,14 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">Drug Retail Category Analyst</h3>
-                  <p className="text-gray-600">Monster Energy Company</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Monster Energy Company</h3>
+                  <p className="text-gray-600">Drug Retail Category Analyst</p>
                 </div>
                 <span className="text-gray-500">07/2020 - 02/2021</span>
               </div>
               <p className="mt-2 text-gray-600">Oversaw ~15,000 drug accounts in the US, assisting sales teams with creating data driven selling stories</p>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li>• Grew MEC sales by $6MM (+16%) in 2020 at Walgreens, exceeding sales goals</li>
-                <li>• Finalist for company-wide internal "Shark Tank" competition recommending and leading team of four in redesigning and upgrading of Monster HQ first floor and courtyard, culminating to sales pitch in front of executive leadership resulting in ~$40M approval</li>
               </ul>
             </div>
 
@@ -314,14 +313,14 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">Category Analyst & Chain Sales Representative</h3>
-                  <p className="text-gray-600">Gallo Sales Company</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Gallo Sales Company</h3>
+                  <p className="text-gray-600">Retail Category Analyst / Wine and Spirits Chain Retail Sales Rep</p>
                 </div>
                 <span className="text-gray-500">06/2016 - 06/2019</span>
               </div>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li>• Analyzed, drew and implemented schematic wine shelf sets for all 198 Save Mart Company stores</li>
-                <li>• Managed Gallo's 70+ wine and spirits portfolio in 22 chain grocery stores in San Francisco area</li>
+                <li>• Managed Gallo's 70+ wine and spirits portfolio in 22 retail chain grocery stores in San Francisco area</li>
               </ul>
             </div>
           </div>
